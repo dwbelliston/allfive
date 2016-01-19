@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="allfive">
+    <head>
+        <title>allfive</title>
+
+        <meta name="viewport">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body ng-controller="allfive">
+
+
+    <div class="pane left animated" ng-style="{'z-index': leftZ}" ng-class="{slideInLeft: leftIn, slideOutLeft: leftOut}">
+        <img src="icon/computer.png">
+        <div class="moveRightArrow" ng-click="moveLeftLeft()"><div class="circle"></div></div>
+    </div>
+
+
+    <div class="pane right animated" ng-style="{'z-index': rightZ}" ng-class="{slideInRight: rightIn, slideOutRight: rightOut}">
+        <img src="icon/baby.png">
+        <div class="moveLeftArrow" ng-click="moveRightRight()"><div class="circle"></div></div>
+    </div>
+
+
+    <div class="pane top animated" ng-style="{'z-index': topZ}" ng-class="{slideInDown: topDown, slideOutUp: topUp}">
+        <div class="moveDownArrow" ng-click="moveTopUp()"><div class="circle"></div></div>
+        <img src="icon/book.png">
+    </div>
+
+
+    <div class="pane bottom animated" ng-style="{'z-index': bottomZ}" ng-class="{slideInUp: bottomUp, slideOutDown: bottomDown}">
+        <div class="moveUpArrow" ng-click="moveBottomDown()"><div class="circle"></div></div>
+        <img src="icon/church.png">
+    </div>
+
+
+
+    <div class="pane center animated" ng-style="{'z-index': centerZ}" ng-class="{
+       slideOutUp: centerOutUp,
+       slideInDown: centerInDown,
+       slideOutDown: centerOutDown,
+       slideInUp: centerInUp,
+       slideOutRight: centerOutRight,
+       slideInRight: centerInRight,
+       slideOutLeft: centerOutLeft,
+       slideInLeft: centerInLeft}">
+        <div class="moveLeftArrow" ng-click="moveCenterRight()"><div class="circle"></div></div>
+        <div class="moveRightArrow" ng-click="moveCenterLeft()"><div class="circle"></div></div>
+        <div class="centerContainer">
+            <img class="centerImage" src="icon/rice.png">
+            <div class="centerAppear"><a href="https://www.lds.org/?lang=eng">I just love rice</a></div>
+        </div>
+        <div class="moveUpArrow" ng-click="moveCenterDown()"><div class="circle"></div></div>
+        <div class="moveDownArrow" ng-click="moveCenterUp()"><div class="circle"></div></div>
+    </div>
+
+
+
+
+    </body>
+</html>

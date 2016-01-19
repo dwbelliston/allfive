@@ -1,0 +1,125 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: 50%;
+    width: auto;
+}
+
+
+/*Nav controls*/
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.moveLeftArrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moveRightArrow {
+    position: absolute;
+    left: 90vw;
+    top: 0;
+    height: 100vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moveDownArrow {
+    position: absolute;
+    top: 90vh;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moveUpArrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Panes*/
+.center {
+    background: #E34A28;
+}
+
+.left {
+    background: #9B59B6;
+}
+
+.right {
+    background: #2980B9;
+}
+
+.bottom {
+    background: #F39C12;
+}
+
+.top {
+    background: #2ECC71;
+}
+
+.pane {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Containters*/
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 25vw;
+}
+
+
+
+.centerAppear {
+    display: none;
+}
+
+.centerContainer:hover .centerImage{
+     display: none;
+}
+
+.centerContainer:hover .centerAppear{
+     display: flex;
+}
+
+
+
