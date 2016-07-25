@@ -15,7 +15,8 @@ allfive.controller('allfive', function ($scope) {
         $scope.centerOutRight = false;
         $scope.centerOutLeft = false;
         $scope.centerOutUp = false;
-        $scope.centerOutDown = false;                         $scope.centerInUp = false;
+        $scope.centerOutDown = false;
+        $scope.centerInUp = false;
         $scope.centerInDown = false;
 
         $scope.rightIn = false;
