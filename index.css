@@ -9,7 +9,7 @@ div {
 }
 
 img {
-    height: 50%;
+    height: 10vh;
     width: auto;
 }
 
@@ -103,23 +103,32 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    width: 25vw;
+    height: 60vh;
+    width: 60vw;
+    position: relative;
 }
 
+.centerImage {
+  transition: opacity 1s;
+}
 
 
 .centerAppear {
-    display: none;
+    opacity: 0;
+    transition: all 1s;
+    font-family: monospace;
+    color: white;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
 }
 
 .centerContainer:hover .centerImage{
-     display: none;
+     /*opacity: 0;*/
 }
 
 .centerContainer:hover .centerAppear{
-     display: flex;
+     opacity: 1;
+     transform: translate(-50%, 8vh);
 }
-
-
-
